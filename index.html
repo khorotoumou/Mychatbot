@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Assistant virtuel DGI Côte d'Ivoire</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <!--Here is the first nav bar with logo dgi and t 2 buttons-->
+      <!--div class="navbar-container">
+        <div class="brand">
+          <div class="logo">
+            <img src="static/logo dgi.png" alt="Logo DGI Côte d'Ivoire" class="logo-image" />
+            <span class="logo-subtitle">Côte d'Ivoire</span>
+          </div>
+          <div class="brand-info">
+            <h1 class="title">Assistant virtuel</h1>
+            <p class="subtitle">Direction Générale des Impôts</p>
+          </div>
+          <img src="static/icons8-chatbot-96.png" alt="Robot assistant" class="robot-icon" />
+        </div>
+        
+        <nav class="navbar-nav">
+          <a href="https://www.e-impots.gouv.ci" class="nav-link" target="_blank" rel="noopener">
+            <span class="nav-icon">🏛️</span>
+            Portail e-impots
+          </a>
+          <a href="https://www.e-impots.gouv.ci" class="nav-link" target="_blank" rel="noopener">
+            <span class="nav-icon">📞</span>
+            Contact
+          </a>
+        </nav>
+      </div-->
+    </header>
+
+    <!-- Floating Chat Container -->
+    <div id="floating-chat-container" class="floating-chat-container" style="display: none;">
+      <div class="chat-header">
+        <div class="chat-title">Assistant virtuel</div>
+        <button id="close-chat-btn" class="close-chat-btn">✖</button>
+      </div>
+      <div id="chat-window" class="chat-window" aria-live="polite"></div>
+      
+      <div class="quick-actions" role="group" aria-label="Accès rapide">
+        <button class="chip" data-text="numéro de télédéclarant">Numéro télédéclarant</button>
+        <button class="chip" data-text="adhésion à la plateforme">Adhésion</button>
+        <button class="chip" data-text="problèmes de connexion">Connexion</button>
+        <button class="chip" data-text="déclaration fiscale BIC">Déclaration</button>
+        <button class="chip" data-text="paiement en ligne">Paiement</button>
+        <button class="chip" data-action="deadlines" data-text="échéances fiscales">Échéances</button>
+      </div>
+      
+      <form id="chat-form" class="chat-form">
+        <input type="text" id="user-input" placeholder="Posez votre question..." autocomplete="off" />
+        <button class="btn primary" type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <!-- Chatbot floating icon -->
+    <div id="chatbot-icon" class="chatbot-icon">
+      <img src="static/icons8-chatbot-96.png" alt="Assistant virtuel" />
+    </div>
+
+    <script src="static/app.js" defer></script>
+  </body>
+  </html>
+
+
